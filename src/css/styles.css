@@ -1,0 +1,70 @@
+@font-face {
+  font-family: Lato-Regular;
+  src: url(../assets/fonts/Lato-Regular.ttf);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-family: Lato-Regular;
+}
+
+.accordion {
+  width: 60%;
+  height: auto;
+}
+
+.accordion__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-small);
+  cursor: pointer;
+  background-color: var(--color-primary);
+}
+
+.accordion__title {
+  color: var(--color-text);
+}
+
+.accordion__title-button {
+  padding: var(--spacing-xs);
+  cursor: pointer;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--color-text);
+}
+
+.accordian__title-button-logo {
+  transition: transform 0.3 linear;
+}
+
+.accordion__description-container {
+  max-height: 0;
+  overflow: hidden;
+  transform: max-height 0.3 linear;
+  background-color: var(--color-secondary);
+}
+
+.accordion__description-container--active {
+  max-height: 500px;
+}
+
+.accordion__description {
+  line-height: 1.3;
+  padding: var(--spacing-small);
+}
+
+.rotate-arrow {
+  transform: rotate(180deg);
+}
