@@ -45,14 +45,14 @@ main {
   background-color: var(--color-text);
 }
 
-.accordian__title-button-logo {
-  transition: transform 0.3 linear;
+.accordion__title-button-logo {
+  transition: transform 0.3s linear;
 }
 
 .accordion__description-container {
   max-height: 0;
   overflow: hidden;
-  transform: max-height 0.3 linear;
+  transition: max-height 0.3s linear;
   background-color: var(--color-secondary);
 }
 
